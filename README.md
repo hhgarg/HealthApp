@@ -5,5 +5,5 @@ It contains an analytics page UI that shows your weight loss over the span of mo
 Find Apk in build folder.
 <br/>
 <h2>Screenshots</h2><br/>
-<img src="https://github.com/invictus-15/HealthApp/blob/main/Screenshot.jpeg" height="700em" width="280em" />
+<img src="https://github.com/invictus-15/HealthApp/blob/main/Screenshot.jpeg" height="500em" width="280em" />
 
