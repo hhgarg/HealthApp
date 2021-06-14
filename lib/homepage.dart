@@ -4,6 +4,7 @@ import 'package:timeline_tile/timeline_tile.dart';
 import 'linechart.dart';
 import 'topnavi.dart';
 import 'dart:ui';
+import 'package:flutter/services.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -14,7 +15,13 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   //double height = MediaQuery.of(context).size.height;
+  @override
+  void initState() {
+    
+    super.initState();
+    SystemChrome.setEnabledSystemUIOverlays([]);
 
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -102,7 +109,7 @@ class _HomePageState extends State<HomePage> {
                     children: [
                       SizedBox(width: 10),
                       Padding(
-                        padding: const EdgeInsets.only(top: 5.0, left: 42),
+                        padding: const EdgeInsets.only(top: 5.0, left: 15),
                         child: Text(
                           'Current Weight',
                           style: TextStyle(
@@ -127,7 +134,7 @@ class _HomePageState extends State<HomePage> {
                     ],
                   ),
                   Padding(
-                    padding: const EdgeInsets.only(left: 52.0),
+                    padding: const EdgeInsets.only(left: 25.0),
                     child: RichText(
                       text: TextSpan(children: <TextSpan>[
                         TextSpan(
@@ -150,7 +157,7 @@ class _HomePageState extends State<HomePage> {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.only(left: 52.0),
+                    padding: const EdgeInsets.only(left: 25.0),
                     child: Text(
                       'Progress till now',
                       style: TextStyle(
@@ -160,7 +167,7 @@ class _HomePageState extends State<HomePage> {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.only(left: 52.0),
+                    padding: const EdgeInsets.only(left: 25.0),
                     child: Text(
                       'You have lost around 3kg',
                       style: TextStyle(
@@ -171,7 +178,7 @@ class _HomePageState extends State<HomePage> {
                     ),
                   ),
                   Padding(
-                    padding: EdgeInsets.only(left: 45),
+                    padding: EdgeInsets.only(left: 25),
                     child: Column(
                       children: <Widget>[
                         TimelineTile(
